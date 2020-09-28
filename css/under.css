@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "monolith-l";
+    src: url(../fonts/monolith/Monolith-Light.otf) format("truetype");
+  /*--------------------------------------------------------------------*/
+    font-family: "monolith-li";
+    src: url(../fonts/monolith/Monolith-LightItalic.otf) format("truetype");
+  /*--------------------------------------------------------------------*/
+    font-family: "monolith";
+    src: url(../fonts/monolith/Monolith-Regular.otf) format("truetype");
+  /*--------------------------------------------------------------------*/
+    font-family: "monolith-ri";
+    src: url(../fonts/monolith/Monolith-RegularItalic.otf) format("truetype");
+}
+
+@font-face
+{
+    font-family: "segoeui";
+    src: url(../fonts/segoeui/segoeui.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  /*--------------------------------------------------------------------*/
+    font-family: "segoeui";
+    src: url(../fonts/segoeui/segoeuib.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  /*--------------------------------------------------------------------*/
+  
+}
+
+@font-face
+{
+    font-family: "flixout";
+    src: url(../fonts/flix-outline/Flix-Outline.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+a:focus
+{
+    outline: 0;
+}
+a
+{
+    text-decoration: none;
+    color: bisque;
+}
+div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%,-50%);
+}
+
+h1
+{
+    font-family: 'flixout', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+}
+
+h4  
+{
+    font-family: 'monolith',sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#blink {
+    animation: blinker 2s infinite;
+    text-align: center;
+  }
+  
+
+  @keyframes blinker {
+    0% { color: red;
+        text-shadow: red 0px 0px 20px;
+         font-size: 300%;}
+    25% { color: #ffd300; 
+          text-shadow: #ffd300 0px 0px 20px;
+          font-size: 300%}
+    50% { color: #de38c8; 
+            text-shadow: #de38c8 0px 0px 20px;
+            font-size: 300%}
+    75% { color: #652ec7;
+           text-shadow: #652ec7 0px 0px 20px;
+            font-size: 300%;}
+    100% { color: #33135c;
+                text-shadow: #33135c 0px 0px 20px;
+                 font-size: 300%;}
+}
+  
+ 
+
+  @media only screen and (max-width: 480px)
+  {
+    @keyframes blinker {
+        0% { color: red;
+            text-shadow: red 0px 0px 20px;
+             font-size: 100%;}
+        25% { color: #ffd300; 
+              text-shadow: #ffd300 0px 0px 20px;
+              font-size: 100%}
+        50% { color: #de38c8; 
+                text-shadow: #de38c8 0px 0px 20px;
+                font-size: 100%}
+        75% { color: #652ec7;
+               text-shadow: #652ec7 0px 0px 20px;
+                font-size: 100%;}
+        100% { color: #33135c;
+                text-shadow: #33135c 0px 0px 20px;
+                font-size: 100%;}
+    }
+  }
+  
